@@ -1,0 +1,93 @@
+.xbox-ps {
+  background: url("../../img/xbox-ps/bg.png") no-repeat center / cover;
+  // .xbox-ps__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(30) rem(15) rem(92);
+    column-gap: rem(45);
+    position: relative;
+    z-index: 1;
+    @media (max-width: $desk) {
+      align-items: center;
+    }
+  }
+
+  // .xbox-ps__content
+
+  &__content {
+    padding-top: rem(85);
+    width: rem(530);
+    flex-shrink: 0;
+    @media (max-width: $desk) {
+      padding-top: rem(64);
+    }
+    @media (max-width: $mobile) {
+      display: block;
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+
+  // .xbox-ps__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(30);
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // .xbox-ps__heading
+
+  &__heading {
+    margin-bottom: rem(19);
+    @media (max-width: $desk) {
+      margin-bottom: rem(18);
+    }
+  }
+
+  // .xbox-ps__text
+
+  &__text {
+    margin-bottom: rem(30);
+    position: relative;
+    &::after {
+      content: "";
+      width: rem(34);
+      height: rem(20);
+      background: url("../../img/vr-glasses/arrows.svg") no-repeat center / cover;
+      position: absolute;
+      bottom: rem(-20);
+      right: 14%;
+    }
+  }
+
+  // .xbox-ps__button
+
+  &__button {
+  }
+
+  // .xbox-ps__img-block
+
+  &__img-block {
+    width: rem(634);
+    margin-right: rem(-90);
+    @media (max-width: $desk) {
+      margin-right: rem(-32);
+    }
+    @media (max-width: $tablet) {
+      margin-right: rem(-100);
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  // .xbox-ps__img
+
+  &__img {
+    width: 100%;
+  }
+}

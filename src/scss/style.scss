@@ -1,0 +1,12 @@
+/* Base */
+
+/* @import "../../node_modules/swiper/swiper-bundle.min"; */
+@import "./base/fonts";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/base";
+
+/* Blocks */
+
+@import "./blocks/*.scss";

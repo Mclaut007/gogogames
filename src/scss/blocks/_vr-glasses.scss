@@ -1,0 +1,129 @@
+.var-glasses {
+  position: relative;
+  background: url("../../img/vr-glasses/person.png") no-repeat right top rem(-195);
+  background-size: rem(440) rem(915);
+  @media (max-width: $desk) {
+    background-size: rem(320) auto;
+    background-position: right top rem(-80);
+  }
+
+  // .varletter-glasses__container
+
+  &__container {
+    display: flex;
+    padding: rem(106) rem(15) rem(92);
+    // justify-content: space-between;
+    gap: rem(76);
+    background: url("../../img/vr-glasses/letters.svg") no-repeat bottom right/ 45%;
+    @media (max-width: $desk) {
+      align-items: center;
+    }
+    @media (max-width: $tablet) {
+      gap: rem(32);
+      padding: rem(72) rem(15) rem(50);
+    }
+    @media (max-width: $mobileSmall) {
+      padding-top: rem(62);
+    }
+  }
+
+  // .var-glasses__img-block
+
+  &__img-block {
+    width: rem(557);
+    position: relative;
+    margin-left: rem(-51);
+    @media (max-width: $tablet) {
+      margin-left: rem(-90);
+    }
+    @media (max-width: $mobile) {
+      display: none;
+      max-width: 100%;
+    }
+    &::before {
+      content: "";
+      width: 132%;
+      aspect-ratio: 1.14 / 1;
+      background: url("../../img/vr-glasses/bg-img-block.png") no-repeat center / contain;
+      position: absolute;
+      bottom: rem(15);
+      right: rem(87);
+    }
+  }
+
+  // .var-glasses__img
+
+  &__img {
+    position: relative;
+    width: 100%;
+  }
+
+  // .var-glasses__content
+
+  &__content {
+    width: rem(586);
+    padding-top: rem(77);
+    @media (max-width: $tablet) {
+      padding-top: 0;
+      width: rem(700);
+      max-width: 100%;
+    }
+    &::before {
+      content: "";
+      width: 150%;
+      background: url("../../img/vr-glasses/bg-content.png") no-repeat;
+      position: absolute;
+      top: rem(-52);
+      right: rem(-103);
+    }
+  }
+
+  // .var-glasses__subtitle
+
+  &__subtitle {
+    margin-bottom: rem(30);
+    position: relative;
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // .var-glasses__heading
+
+  &__heading {
+    margin-bottom: rem(18);
+    position: relative;
+    // @media (max-width: $desk) {
+    //   margin-bottom: rem(18);
+    // }
+  }
+
+  // .var-glasses__text
+
+  &__text {
+    width: rem(518);
+    margin-bottom: rem(29);
+    position: relative;
+    &::after {
+      content: "";
+      width: rem(34);
+      height: rem(20);
+      background: url("../../img/vr-glasses/arrows.svg") no-repeat center / cover;
+      position: absolute;
+      top: calc(100% + rem(12));
+      left: 53%;
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
+    @media (max-width: $mobileSmall) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  // .var-glasses__button
+
+  &__button {
+    position: relative;
+  }
+}
