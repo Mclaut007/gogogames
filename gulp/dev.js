@@ -17,6 +17,7 @@ const babel = require("gulp-babel");
 const imagemin = require("gulp-imagemin");
 // Не работает у меня gulp-changed последней версии. В документации не так, как в видео. Установил версию 4.0.3
 const changed = require("gulp-changed");
+const replace = require("gulp-replace");
 
 gulp.task("clean:dev", function (done) {
   if (fs.existsSync("./build/")) {
@@ -46,6 +47,12 @@ gulp.task("html:dev", function () {
     .pipe(changed("./build/", { hasChanged: changed.compareContents }))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSetting))
+    .pipe(
+      replace(
+        /(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+        "$1./$4$5$7$1"
+      )
+    )
     .pipe(gulp.dest("./build/"))
     .pipe(browserSync.stream());
 });
@@ -61,6 +68,18 @@ gulp.task("sass:dev", function () {
       .pipe(sass())
       // .pipe(groupMedia())
       // Группировка медиазапросов. Лучше не использовать во время разработки. Потому что, в частности, появляются баги в работе sourceMaps. Плюс, имеет смысл использовать при mobile first (на мой взгляд).
+      .pipe(
+        replace(
+          /(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+          "$1$2$3$4$6$1"
+        )
+      )
+      // .pipe(
+      //   replace(
+      //     /(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/g,
+      //     "$1$2$3$4$6$1"
+      //   )
+      // )
       .pipe(sourceMaps.write())
       .pipe(gulp.dest("./build/css/"))
       .pipe(browserSync.stream())

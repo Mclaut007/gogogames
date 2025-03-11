@@ -2,7 +2,7 @@
 /* @import "../../node_modules/swiper/swiper-bundle.min"; */
 @font-face {
   font-family: "qanelas-bold";
-  src: url("../../fonts/Qanelas-Bold.woff2") format("woff2"), url("../../fonts/Qanelas-Bold.woff") format("woff");
+  src: url("../fonts/Qanelas-Bold.woff2") format("woff2"), url("../fonts/Qanelas-Bold.woff") format("woff");
 }
 :root {
   --main-color: #826f8c;
@@ -425,7 +425,7 @@ body._lock {
 }
 
 .intro {
-  background: url("../../img/intro/bg.png") no-repeat left center/cover;
+  background: url("../img/intro/bg.png") no-repeat left center/cover;
 }
 .intro__container {
   padding: 9.875rem 0.9375rem 4.6875rem;
@@ -467,7 +467,7 @@ body._lock {
   content: "";
   width: 7.6875rem;
   height: 6.8125rem;
-  background: url("../../img/intro/dots.svg");
+  background: url("../img/intro/dots.svg");
   position: absolute;
   top: calc(50% - 1.75rem);
   left: calc(100% - 2.5rem);
@@ -494,7 +494,7 @@ body._lock {
   content: "";
   width: 7rem;
   height: 7rem;
-  background: url("../../img/intro/cross1.svg");
+  background: url("../img/intro/cross1.svg");
   position: absolute;
   top: 8.1875rem;
   right: calc(100% + 4.4375rem);
@@ -503,7 +503,7 @@ body._lock {
   content: "";
   width: 49.3125rem;
   height: 55.1875rem;
-  background: url("../../img/intro/text-bg.svg");
+  background: url("../img/intro/text-bg.svg");
   position: absolute;
   top: 12.875rem;
   right: -2.25rem;
@@ -523,7 +523,7 @@ body._lock {
   content: "";
   width: 8.0625rem;
   height: 1.8125rem;
-  background: url("../../img/intro/arrows.svg");
+  background: url("../img/intro/arrows.svg");
   position: absolute;
   top: 50%;
   left: calc(100% + 2rem);
@@ -585,7 +585,7 @@ body._lock {
   content: "";
   width: 7.375rem;
   height: 7.375rem;
-  background: url("../../img/intro/cross2.svg") no-repeat center/cover;
+  background: url("../img/intro/cross2.svg") no-repeat center/cover;
   position: absolute;
   top: calc(100% + 4.9375rem);
   left: 14.75rem;
@@ -734,7 +734,7 @@ body._lock {
   content: "";
   width: 66%;
   aspect-ratio: 1/1;
-  background: url("../../img/pricing/bg-decor.png") no-repeat center/cover;
+  background: url("../img/pricing/bg-decor.png") no-repeat center/cover;
   position: absolute;
   top: -8.75rem;
   left: 0;
@@ -822,7 +822,7 @@ body._lock {
 }
 .price-card_emphasized {
   padding-top: 3.5rem;
-  background: url("../../img/pricing/check.svg") no-repeat right 2.25rem top 2.4375rem, url("../../img/pricing/badge-circle.svg") no-repeat right 1.5rem top 1.5rem, url("../../img/pricing/emphasized-card.png") no-repeat bottom left;
+  background: url("../img/pricing/check.svg") no-repeat right 2.25rem top 2.4375rem, url("../img/pricing/badge-circle.svg") no-repeat right 1.5rem top 1.5rem, url("../img/pricing/emphasized-card.png") no-repeat bottom left;
   color: var(--white-color);
   background-size: 1.125rem, 2.8125rem 2.8125rem, cover;
 }
@@ -897,7 +897,7 @@ body._lock {
 
 .var-glasses {
   position: relative;
-  background: url("../../img/vr-glasses/person.png") no-repeat right top -12.1875rem;
+  background: url("../img/vr-glasses/person.png") no-repeat right top -12.1875rem;
   background-size: 27.5rem 57.1875rem;
 }
 @media (max-width: 74.99875rem) {
@@ -910,7 +910,7 @@ body._lock {
   display: flex;
   padding: 6.625rem 0.9375rem 5.75rem;
   gap: 4.75rem;
-  background: url("../../img/vr-glasses/letters.svg") no-repeat bottom right/45%;
+  background: url("../img/vr-glasses/letters.svg") no-repeat bottom right/45%;
 }
 @media (max-width: 74.99875rem) {
   .var-glasses__container {
@@ -948,7 +948,7 @@ body._lock {
   content: "";
   width: 132%;
   aspect-ratio: 1.14/1;
-  background: url("../../img/vr-glasses/bg-img-block.png") no-repeat center/contain;
+  background: url("../img/vr-glasses/bg-img-block.png") no-repeat center/contain;
   position: absolute;
   bottom: 0.9375rem;
   right: 5.4375rem;
@@ -971,7 +971,7 @@ body._lock {
 .var-glasses__content::before {
   content: "";
   width: 150%;
-  background: url("../../img/vr-glasses/bg-content.png") no-repeat;
+  background: url("../img/vr-glasses/bg-content.png") no-repeat;
   position: absolute;
   top: -3.25rem;
   right: -6.4375rem;
@@ -998,7 +998,7 @@ body._lock {
   content: "";
   width: 2.125rem;
   height: 1.25rem;
-  background: url("../../img/vr-glasses/arrows.svg") no-repeat center/cover;
+  background: url("../img/vr-glasses/arrows.svg") no-repeat center/cover;
   position: absolute;
   top: calc(100% + 0.75rem);
   left: 53%;
@@ -1018,7 +1018,7 @@ body._lock {
 }
 
 .xbox-ps {
-  background: url("../../img/xbox-ps/bg.png") no-repeat center/cover;
+  background: url("../img/xbox-ps/bg.png") no-repeat center/cover;
 }
 .xbox-ps__container {
   display: flex;
@@ -1074,7 +1074,7 @@ body._lock {
   content: "";
   width: 2.125rem;
   height: 1.25rem;
-  background: url("../../img/vr-glasses/arrows.svg") no-repeat center/cover;
+  background: url("../img/vr-glasses/arrows.svg") no-repeat center/cover;
   position: absolute;
   bottom: -1.25rem;
   right: 14%;
